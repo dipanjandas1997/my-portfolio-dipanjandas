@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Dipanjan Das">
+    <link rel="icon" href="/logo.svg">
+    <link rel="apple-touch-icon" href="/logo.svg">
+    <script src="https://kit.fontawesome.com/6ff8510c87.js" crossorigin="anonymous"></script>
+    <title>Portfolio | Dipanjan Das</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: white;
+            color: black;
+        }
+        header {
+            background-color: #f4f4f4;
+            color: black;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #666;
+            text-decoration: underline;
+        }
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            scroll-margin-top: 70px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        .section.visible {
+            opacity: 1;
+        }
+        h2 {
+            color: black;
+            border-bottom: 2px solid black;
+            padding-bottom: 0.5rem;
+        }
+        .experience-item {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s;
+        }
+        .experience-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .experience-item ul {
+            padding-left: 1.5rem;
+        }
+        .experience-item li {
+            margin-bottom: 0.5rem;
+        }
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        #skills li {
+            background-color: #ddd;
+            color: black;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+        .contact p {
+            display: flex;
+            align-items: center;
+        }
+        .contact i {
+            margin-right: 0.5rem;
+        }
+        #mobile-number {
+            display: none;
+            margin-top: 1rem;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #004499;
+        }
+        footer {
+            background-color: #f4f4f4;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIPANJAN DAS</h1>
+        <p><strong>Masterpara, Town Pratapgarh, Agartala, Tripura (W), 799001</strong></p>
+    </header>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ddipanjan080@gmail.com">ddipanjan080@gmail.com</a></p>
+        <p>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/dipanjan-das-🇮🇳-23382a343" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+        <button id="show-mobile">Show Mobile Number</button>
+        <p id="mobile-number">Mobile: 8787890893</p>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            Dedicated to leveraging extensive expertise in operations management, team leadership, and customer acquisition to drive sustainable organizational excellence. With a proven track record in process optimization, strategic problem-solving, and cross-functional coordination, I am committed to enhancing productivity, streamlining operations, and delivering superior outcomes that align with and exceed corporate objectives.
+        </p>
+    </section>
+
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <div>
+            <h3>Bachelor of Technology in Mechanical Engineering</h3>
+            <p>Techno College of Engineering, Agartala (2020)</p>
+            <p>CGPA: 7.01</p>
+        </div>
+        <div>
+            <h3>Diploma in Mechanical Engineering</h3>
+            <p>Tripura Institute of Technology, Narsingarh (2017)</p>
+            <p>CGPA: 6.87</p>
+        </div>
+        <div>
+            <h3>10th, Madhyamik Pariksha (TBSE)</h3>
+            <p>Netaji Subhash Vidyaniketan (2014)</p>
+            <p>Percentage: 81.29%</p>
+        </div>
+    </section>
+
+    <section class="section" id="experience">
+        <h2>Work Experiences</h2>
+        <div class="experience-item">
+            <h3>Government Vehicle Fleet In-Charge at Progressive Automobiles Pvt. Ltd.</h3>
+            <p>Mar 2024 - Present</p>
+            <ul>
+                <li>Managing & optimizing government vehicle operations.</li>
+                <li>Implementing AI-powered predictive diagnostics for preventive maintenance.</li>
+                <li>Deploying mobile repair units for on-site servicing & emergency repairs.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Team Leader at Gram Supply Chain Solutions Pvt. Ltd.</h3>
+            <p>October 2022 – December 2022</p>
+            <ul>
+                <li>Supervised and led a team of loaders and delivery associates.</li>
+                <li>Oversaw daily operations.</li>
+                <li>Optimized workflows.</li>
+                <li>Ensured timely and accurate deliveries.</li>
+                <li>Coordinated logistics across multiple locations.</li>
+                <li>Managed inventory flow.</li>
+                <li>Utilized advanced software solutions for strategic route planning, real-time tracking, and efficiency optimization to enhance overall supply chain performance.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Customer Acquisition Officer at Reliance Jio Mart</h3>
+            <p>May 2022 – September 2022</p>
+            <ul>
+                <li>Facilitated the registration of Kirana stores.</li>
+                <li>Ensured seamless onboarding and compliance with platform requirements.</li>
+                <li>Resolved merchant issues and addressed operational challenges.</li>
+                <li>Provided end-to-end customer support through strategic problem-solving.</li>
+                <li>Managed relationships and offered real-time assistance.</li>
+                <li>Enhanced merchant satisfaction, business growth, and overall marketplace efficiency.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Operations Management</li>
+            <li>Strategic Planning</li>
+            <li>Basic MS Office (Word, Excel, Powerpoint)</li>
+            <li>Effective Problem Solving</li>
+            <li>Prompt Engineering (AI)</li>
+            <li>Active Learning</li>
+            <li>Relationship Management</li>
+            <li>Critical Thinking</li>
+            <li>Creativity</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Dipanjan Das. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links (no effect since nav is removed)
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation for sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Show/Hide mobile number
+        document.getElementById('show-mobile').addEventListener('click', function() {
+            var mobile = document.getElementById('mobile-number');
+            if (mobile.style.display === 'none') {
+                mobile.style.display = 'block';
+            } else {
+                mobile.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
